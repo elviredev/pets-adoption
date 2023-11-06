@@ -2,21 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pet Adoption List</title>
+  <title>Pets Adoption List</title>
   <link rel="stylesheet" href="style.css">
   <script type="module" src="script.js"></script>
 </head>
 <body>
   <div class="hero">
-    <h1>Bienvenue.</h1>
+    <h1>Adoptes moi 😺</h1>
     <h2>Nos amis ont besoin d'une maison.</h2>
   </div>
 
   <div class="filter-nav">
-    <a href="#">Animaux</a>
-    <a href="#">Chiens</a>
-    <a href="#">Chats</a>
-    <a href="#">Lapins</a>
+    <a href="#" data-filter="all">
+      <span class="only-large-screen">Tous les</span> Animaux
+    </a>
+    <a href="#" data-filter="chien">
+      <span class="only-large-screen">Seulement les</span> Chiens</a>
+    <a href="#" data-filter="chat">
+      <span class="only-large-screen">Seulement les</span> Chats</a>
+    <a href="#" data-filter="lapin"><span class="only-large-screen">Seulement les</span> Lapins</a>
   </div>
 
   <div class="animals">

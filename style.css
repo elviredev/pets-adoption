@@ -49,7 +49,7 @@ h1, h2, h3, h4 {
 .hero h2 {
   font-weight: normal;
   font-size: 1.7rem;
-  margin: 0;
+  margin: 25px 0 0;
 }
 /*
   filtres
@@ -67,6 +67,17 @@ h1, h2, h3, h4 {
   border-radius: 4px;
   margin: 4px;
 }
+.filter-nav a:hover {
+  background-color: #e6a5b4;
+}
+.filter-nav .active {
+  background-color: #BE424B;
+  color: #f1f1f1;
+}
+.filter-nav .active:hover {
+  background-color: #BE424B;
+  cursor: default;
+}
 
 /*
   animaux
@@ -74,6 +85,7 @@ h1, h2, h3, h4 {
 .animals {
   max-width: 700px;
   margin: 0 auto;
+  padding: 0;
 }
 .animal-card {
   display: grid;
@@ -127,7 +139,38 @@ h1, h2, h3, h4 {
   background: linear-gradient(rgb(246, 106, 129), rgb(246, 66, 95));
 }
 
+.only-large-screen {
+  display: inline;
+}
 
+@media (max-width: 768px) {
+  .animals {
+    padding: 0 15px;
+  }
+  .animal-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .only-large-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero h2 {
+    font-size: 1rem;
+  }
+  .filter-nav a {
+    padding: 9px 5px;
+  }
+}
 
 
 
