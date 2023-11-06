@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Adoption List</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <div class="hero">
+    <h1>Bienvenue.</h1>
+    <h2>Nos amis ont besoin d'une maison.</h2>
+  </div>
+
+  <div class="filter-nav">
+    <a href="#">Animaux</a>
+    <a href="#">Chiens</a>
+    <a href="#">Chats</a>
+    <a href="#">Lapins</a>
+  </div>
+
+  <div class="animals">
+  </div>
+
+  <template id="animal-card">
+    <div class="animal-card">
+      <div class="animal-card-text">
+        <h3></h3>
+        <small>
+          <span class="age">3 ans</span> - <span class="species">cat</span>
+        </small>
+        <p class="description">Meowsalot est un ami bavard qui adore jouer et qui s'entend bien avec les enfants. Il est à la recherche d'un foyer pour toujours aujourd'hui !</p>
+        <a href="#" class="btn-primary">Adopte <span class="name"></span></a>
+      </div>
+      <div class="animal-card-photo">
+        <img src="https://learnwebcode.github.io/pet-adoption-data/photos/meowsalot.webp" alt="un chat nommé Meowsalot">
+      </div>
+    </div>
+  </template>
+</body>
+</html>

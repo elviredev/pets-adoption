@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&family=Slabo+27px&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #C9BFC2;
+}
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+}
+
+/*
+  Hero
+*/
+.hero {
+  background-color: #BE424B;
+  color: #f1f1f1;
+  padding: 50px 30px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+.hero:before,
+.hero:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+.hero:before {
+  top: 0;
+  background: linear-gradient(to left, rgb(246, 106, 129), #BE424B);
+}
+.hero:after {
+  bottom: 0;
+  background: linear-gradient(to right, rgb(246, 106, 129), #BE424B);
+}
+.hero h1 {
+  font-weight: normal;
+  font-size: 6rem;
+  margin: 0;
+}
+.hero h2 {
+  font-weight: normal;
+  font-size: 1.7rem;
+  margin: 0;
+}
+/*
+  filtres
+*/
+.filter-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.filter-nav a {
+  text-decoration: none;
+  padding: 9px;
+  color: #BE424B;
+  border: 1px solid #e58598;
+  border-radius: 4px;
+  margin: 4px;
+}
+
+/*
+  animaux
+*/
+.animals {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.animal-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  margin-bottom: 30px;
+  background-color: #f6eff6;
+  border-radius: 20px;
+  overflow-x: hidden;
+}
+.animal-card:hover img {
+  transform: rotate(20deg) scale(1.4);
+}
+.animal-card-photo {
+  order: 1;
+  grid-row: 1;
+  overflow: hidden;
+}
+.animal-card-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .3s ease-in-out;
+}
+.animal-card-text {
+  padding: 20px 25px;
+}
+.animal-card-text h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.animal-card-text small {
+  color: #A4A09F;
+}
+.animal-card-text p {
+  margin: .8rem 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.btn-primary {
+  background: linear-gradient(rgb(246, 106, 129), #BE424B);
+  padding: 10px;
+  color: #f6eff6;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary:hover {
+  background: linear-gradient(rgb(246, 106, 129), rgb(246, 66, 95));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
